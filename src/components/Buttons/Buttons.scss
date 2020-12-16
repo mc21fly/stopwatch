@@ -1,0 +1,40 @@
+.buttons {
+  display: flex;
+
+  & .button {
+    width: 232px;
+    height: 54px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #565656;
+
+    &__start,
+    &__resume {
+      background-color: #8d6ced;
+    }
+
+    &__stop {
+      background-color: #ff3636;
+    }
+
+    &__lap,
+    &__reset {
+      background-color: #565656;
+    }
+  }
+}
+
+#button1 {
+  z-index: 2;
+  opacity: 0;
+}
+
+#button2 {
+  z-index: 1;
+  opacity: 0;
+}
